@@ -1,6 +1,6 @@
 # ctds-binary
 
-Builds a manylinux2010 wheel for [cTDS](https://pypi.org/project/ctds/)
+Builds a manylinux2014 wheel for [cTDS](https://pypi.org/project/ctds/)
 which includes a bundled version of the FreeTDS library it requires.
 
 Run `./build.sh` (requires Docker) to build a wheel.
