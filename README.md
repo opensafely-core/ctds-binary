@@ -18,7 +18,9 @@ There are lots of things it would be nice to do, including:
 
  * Automating the build process through Github Actions.
 
- * Building wheels for other platforms.
+ * Building wheels for other platforms. (Note that `pymssql` has some
+   [workflows](https://github.com/pymssql/pymssql/tree/master/.github/workflows)
+   doing something very similar that may be useful as a reference.)
 
  * Using a scheduled action to automatically check for new versions of
    cTDS and FreeTDS and rebuild.
