@@ -1,8 +1,8 @@
 #!/bin/bash
 set -euo pipefail
 
-FREETDS_VERSION=1.2.4
-CTDS_VERSION=1.12.0
+FREETDS_VERSION=1.2.18
+CTDS_VERSION=1.13.0
 
 mkdir -p /tmp/build
 cd /tmp/build
