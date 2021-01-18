@@ -18,7 +18,9 @@ pushd "freetds-${FREETDS_VERSION}"
 make && make install
 popd
 
-/opt/python/cp37-cp37m/bin/pip wheel ctds=="$CTDS_VERSION" --wheel-dir wheelhouse
+for pyversion in cp37-cp37m cp38-cp38 cp39-cp39; do
+  /opt/python/$pyversion/bin/pip wheel ctds=="$CTDS_VERSION" --wheel-dir wheelhouse
+done
 
 for whl in wheelhouse/*.whl; do
   auditwheel repair $whl --wheel-dir /io/dist
